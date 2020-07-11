@@ -13,7 +13,6 @@ The requirements were to build a simple todo app using no frameworks or librarie
 
 * Keeping the todo-list in a state object, not in the DOM (I used an Array in my case)
 * Implement a persisting localstorage that loads the last state on refresh.
-*
 * Certain interaction should mimic a real todo app, such as:
 		
 		Initial load presents an empty todo list
