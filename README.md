@@ -29,3 +29,5 @@ On top of these requirements, the app had to be built in a modular way (small fu
 		
 With my implementation, I managed to pass the test with a green score and received very positive feedback.
 
+## Image:
+![SPA-Todo](/SPA-Todo.png)
