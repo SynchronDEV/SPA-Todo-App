@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  position: relative;
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border: 1px solid darkgray;
+  -webkit-box-shadow: 6px 6px 25px -6px rgba(0, 0, 0, 0.75);
+          box-shadow: 6px 6px 25px -6px rgba(0, 0, 0, 0.75);
+}
+
+header {
+  width: 380px;
+  height: 200px;
+  padding: 10px;
+  background-image: url("https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+  background-size: 99% 200%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+}
+
+header .header-top h1 {
+  font-size: 24px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+header .header-top .clear {
+  width: 75px;
+  height: 45px;
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+header #date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  font-size: 25px;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+.bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.content {
+  width: 376px;
+  height: 350px;
+  max-height: 350px;
+  background-color: white;
+  overflow: auto;
+}
+
+.content ul {
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+  margin: 0;
+}
+
+.content ul .item {
+  width: 380px;
+  height: 45px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.content ul .item p {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  left: 50px;
+  top: 5px;
+  background-color: #FFF;
+  max-width: 230px;
+  overflow: hidden;
+}
+
+.content ul .item input[type=checkbox] {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.content ul .item input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
+.content ul .item input[type=checkbox]:checked ~ p {
+  text-decoration: line-through;
+}
+
+.content ul .item input[type=checkbox]:checked ~ input[type=submit] {
+  display: inline;
+}
+
+.content ul .item .delete {
+  background-color: white;
+  color: red;
+  position: absolute;
+  font-size: 18px;
+  right: 15px;
+  top: 5px;
+  margin-top: 5px;
+  padding: 3px;
+  display: none;
+}
+
+.content ul .item .delete:hover {
+  color: #af0000;
+  cursor: pointer;
+}
+
+.content ul .item .lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.add-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+.add-item .add-button {
+  width: 15%;
+  font-size: 20px;
+  color: forestgreen;
+}
+
+.add-item #input {
+  left: 50px;
+  width: 85%;
+  height: 40px;
+  background-color: seagreen;
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+  letter-spacing: 2px;
+}
+
+.add-item #input::-webkit-input-placeholder {
+  color: #dadada;
+}
+
+.add-item #input:-ms-input-placeholder {
+  color: #dadada;
+}
+
+.add-item #input::-ms-input-placeholder {
+  color: #dadada;
+}
+
+.add-item #input::placeholder {
+  color: #dadada;
+}
+/*# sourceMappingURL=style.css.map */
